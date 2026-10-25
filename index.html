@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Tools - All in One Place</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f4ff;
+      color: #172554;
+      text-align: center;
+    }
+    header {
+      background: #243b80;
+      color: white;
+      padding: 25px 12px;
+    }
+    h1 { margin: 0 0 10px; }
+    input {
+      width: 85%;
+      max-width: 400px;
+      padding: 12px;
+      margin: 20px 0;
+      border: 1px solid #aaa;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    .tools {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+      padding: 15px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 22px 8px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px #ccd3e5;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #2456d6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 AI Tools Hub</h1>
+    <p>All AI Tools in One Place</p>
+  </header>
+
+  <input id="search" type="text"
+    placeholder="Search AI tools..."
+    oninput="filterTools()">
+
+  <div class="tools" id="tools">
+    <div class="card">
+      <h3>🖼️ Image AI</h3>
+      <p>AI image tools</p>
+      <a href="https://www.canva.com/">Open Tool</a>
+    </div>
+    <div class="card">
+      <h3>🎬 Video AI</h3>
+      <p>AI video tools</p>
+      <a href="https://www.capcut.com/">Open Tool</a>
+    </div>
+    <div class="card">
+      <h3>💻 Coding AI</h3>
+      <p>AI coding assistant</p>
+      <a href="https://github.com/">Open Tool</a>
+    </div>
+    <div class="card">
+      <h3>✍️ Writing AI</h3>
+      <p>AI writing assistant</p>
+      <a href="https://chatgpt.com/">Open Tool</a>
+    </div>
+  </div>
+
+  <script>
+    function filterTools() {
+      const query = document.getElementById('search')
+        .value.toLowerCase();
+      document.querySelectorAll('.card').forEach(card => {
+        card.style.display = card.innerText.toLowerCase()
+          .includes(query) ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
