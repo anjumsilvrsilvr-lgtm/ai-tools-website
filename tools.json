@@ -1,0 +1,23 @@
+
+[
+  {
+    "name": "ChatGPT",
+    "category": "Writing",
+    "url": "https://chatgpt.com/"
+  },
+  {
+    "name": "Google Gemini",
+    "category": "AI Assistant",
+    "url": "https://gemini.google.com/"
+  },
+  {
+    "name": "Microsoft Copilot",
+    "category": "AI Assistant",
+    "url": "https://copilot.microsoft.com/"
+  },
+  {
+    "name": "Canva",
+    "category": "Design",
+    "url": "https://www.canva.com/"
+  }
+]
